@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Footer Background Video</title>
@@ -9,95 +9,126 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <style>
-      * {
-        padding: 0%;
-        margin: 0%;
-      }
-      body {
-        height: 100vh;
-        width: 100%;
-      }
-      #footer-background {
-        width: 100%;
-        height: 100%;
-      }
-      .footer {
-        position: relative;
-        height: 100vh; 
-        overflow: hidden;
-        background: black; 
-      }
-      .footer .video-background {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: auto;
-        transform: translate(-50%, -50%);
-      }
-      .footer-content {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        color: white;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #social-media {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 400px;
-        width: 700px;
-      }
-      .footer-links {
-        text-decoration: none;
-        color: black;
-        font-size: 30px;
-      }
-      .social-media-circle {
-        background-color: rgb(252, 234, 211);
-        padding: 20px;
-        border-radius: 50%;
-      }
-      #footer-footer {
-        position: absolute;
-        background-color: red;
-        z-index: 4;
-      }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        .footer {
+            position: relative;
+            height: 100vh; 
+            overflow: hidden;
+            background: black; 
+        }
+        .footer .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+        }
+        .footer-content {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #social-media {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 400px;
+            width: 50vw;
+        }
+        .footer-links {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+        .social-media-circle {
+            background-color: rgb(252, 234, 211);
+            padding: 20px;
+            border-radius: 50%;
+        }
+        #footer-footer {
+            position: absolute;
+            background-color: red;
+            z-index: 4;
+        }
+        .bottom-left, .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: white;
+        }
+        .bottom-left {
+            left: 10px;
+        }
+        .bottom-right {
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .bottom-links {
+            text-decoration: none;
+            color: white;
+        }
+        .bottom-right{
+            width: 20vw;
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
-  </head>
-  <body>
-
+</head>
+<body>
     <footer class="footer">
-      <video class="video-background" autoplay loop muted>
-        <source src="Comp 1_1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="footer-content">
-        <div id="social-media">
-          <a class="footer-links" href=""
-            ><div class="social-media-circle"><i class="bi bi-google"></i></div
-          ></a>
-          <a class="footer-links" href=""
-            ><div class="social-media-circle"><i class="bi bi-twitter"></i></div
-          ></a>
-          <a class="footer-links" href=""
-            ><div class="social-media-circle">
-              <i class="bi bi-instagram"></i></div
-          ></a>
-          <a class="footer-links" href=""
-            ><div class="social-media-circle">
-              <i class="bi bi-linkedin"></i></div
-          ></a>
+        <video class="video-background" autoplay loop muted>
+            <source src="Comp 1_1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer-content">
+            <div id="social-media">
+                <a class="footer-links" href="">
+                    <div class="social-media-circle">
+                        <i class="bi bi-google"></i>
+                    </div>
+                </a>
+                <a class="footer-links" href="">
+                    <div class="social-media-circle">
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </a>
+                <a class="footer-links" href="">
+                    <div class="social-media-circle">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </a>
+                <a class="footer-links" href="">
+                    <div class="social-media-circle">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </a>
+            </div>
         </div>
-      </div>
-      <div id="footer-footer">
-      </div>
+        <div id="footer-footer"></div>
+        <div class="bottom-left">
+            <a href="" class="bottom-links" style="color: black; font-size: 20px; margin: 10px; text-decoration: underline;">All rights reserved @amul</a>
+        </div>
+        <div class="bottom-right">
+            <a href="#" class="bottom-links" style="color: black; font-size: 20px; margin: 10px; text-decoration: underline;">Privacy policy</a>
+            <a href="#" class="bottom-links" style="color: black; font-size: 20px; margin: 10px; text-decoration: underline;">Terms of services</a>
+        </div>
     </footer>
-
-  </body>
+</body>
 </html>
